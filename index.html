@@ -1,109 +1,288 @@
 <!DOCTYPE html>
 <html lang="en-us">
+<meta charset=utf-8>
+
 <head>
     <title>
         online cookie store front! located in Stillwater, Oklahoma
     </title>
-<link rel=icon href=https://image.flaticon.com/icons/png/512/1047/1047711.png type=image/x-icon>
+    <link rel=icon href=https://image.flaticon.com/icons/png/512/1047/1047711.png type=image/x-icon>
     <style>
         p {
-            color: orange;
-            font-family: cursive;
+            color: magenta;
+            font-family:serif;
             font-size: 130%;
+            padding: 1;
+            margin: 16px;
+        }
+        body {
+            background-color: cornsilk;
+            margin-left: 100px;
+            margin-right: 100px;
+            border: solid black 12px;
+
         }
 
         aside {
+            background-color: cornsilk;
+            color: magenta;
+        }
+
+        header {
+            background-image: url(http://eskipaper.com/images/oreo-wallpaper-1.jpg);
+            background-attachment: scroll;
+            height: 278px;
+            position: fixed;
+        }
+
+        .navlink {
+            position:none; /*add fixed position when you figure out how to also scroll header*/
+            width: 1254px;
+            background-color: orchid;
+       
+        }
+        main{
+            margin-top:278px;
+        }
+
+        .navlink a {
+            color: white;
+            border: wheat;
+            display: inline-block;
+            text-decoration:none;
+            padding: 1px;
+            margin: 20px;
+        }
+        .navlink a:hover{
+            background-color:purple;
+            padding: 5px;
+        }
+        .navlink li {
+            display: inline-block;
+            border-right: solid white 1px;
+            margin: 7px;
+            text-align:center;
+        }
+       
+        .container-item {
+            display:inline-block;
+            width: 300px;
+            margin: 40px;
             border-style: solid;
+            border-width: 8px;
+            border-color: magenta;
+            border-radius: 30px;
+            padding: 10px;
+        }
+       
+        div.container-item img {
+            width: 300px;
+            height: 280px;
+            border-radius: 20px;
+
+        }
+        .container-item i{
+            text-decoration:underline;
+        }
+        .topright{
+            position: absolute;
+            top: 0px;
+            right: 104px;
+        }
+        .topright li {
+            display:inline-block;
+            text-decoration:none;
+            border-right:solid white 2px;
+            padding-top: 1px;
+            margin: 10px;  
+        }
+        .topright li a {
+            color:white;
+            padding:2px;
+            margin:4px;
+            text-decoration:none;
+        }
+
+        .bannerhead img{
+            display:block;
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top: 305px;
+            right: 123px;
+            border-radius: 10px;
+}
+        .bannerhead{
+            display:block;
+            background-color:plum;
+            width: 800px;
+            margin-left: 10px;
+            height: 400px;
+            border-radius: 10px;
+
         }
     </style>
 
 </head>
 
 <body>
-    <div id=logo>
-        <a href=http://www.devinscookies.com>
-            <img src=https://www.freelogoservices.com/api/main/images/1j+ojFVDOMkX9Wytexe43D6kifCDpBBOmR...NwXs1M3EMoAJtliAvgfNq9fU+
-                border=0 id=logoimage alt="Devins'Cookie Palace">
-        </a>
-    </div>
-    <div id=HeaderUpper></div>
-    <div id=TopMenu></div>
-    <ul style=display:>
-        <li>
-            <div class=phoneIcon>405-822-2110</div>
-        </li>
-        <li>
-        <a href=http://www.devinscookies.com />Home</a>
-        </li>
-        <li style=display:none class=HeaderLiveChat>
-
-        </li>
-        <li style=display: class=First>
-            <a href=http//www.devinscookies.com/account>My account
-            </a>
-        </li>
-        <li style= display:>
-            <div>
-                <a href= http://www.devinscookies.com/login.php?
-                onClick>Sign in</a>
-            </div>
-        <li style= display:>
-            <div>
-                <a href="http//www.cookies.com/retail-locations/">Retail Locations</a>   
-            </div>
-        <li style= display:>
-                    <a href="http//www.devinscookies.com/about-us /"> About Us </a>
-        <li style= display:>
-            <div>
-                <a href=http//www.devincookies.com/login.php?
-                action=create_account onClick>Create account</a>
-            </div>
-            <li style= display: class= Shoppingcart>
-                <a href= http//www.devinscookies/cart.php>
-                    View Cart
-                    <span></span>
+    <header>
+        <div>
+        <ul class="topright">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">My Account</a>
+            </li>
+            <li>
+                <a href="#">Sign in</a>
+            </li>
+            <li>
+                <a href="#">Create Account</a>
+            </li>
+            <li>
+                <a href="#">View Cart</a>
+            </li>
+        </ul>
+        </div>
+        <nav>
+            <div id="logo">
+                <a href=http://www.devinscookies.com>
+                    <img src=https://www.freelogoservices.com/api/main/images/1j+ojFVDOMkX9Wytexe43D6kifCDpBBOmR...NwXs1M3EMoAJtliAvgfNq9fU+
+                     id="logoimage" alt="Devins'Cookie Palace" width="295" height="170">
                 </a>
+            </div>
+            <ul class="navlink">
+                <li>
+                    <div class="phoneIcon" style=color:white;>405-822-2110</div>
+                </li>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+                <li>
+                    <a href="#">Products</a>
+                </li>
+                <li>
+                    <a href="#">Gift Packs!</a>
+                </li>
+                <li>
+                    <a href="#">Retail Locations</a>
+                </li>
+                <li>
+                    <a href="#">Contact Us</a>
                 </li>
             </ul>
-            <br class= Clear>
-        </div>
+        </nav>
+    </header>
+    <main>
+    <div class="bannerhead">
+        <h1>Best Cookies This Side Of The Missisipi!</h1>
         <br>
-        <dic class= Block Moveable Panel id=SidecurrencySelector style=
-        display:none:><div>
-        <div class= getthemhot!>
-            <a href= /shop-now/>
-                <img src= https://i.pinimg.com/736x/07/f3/80/07f3803c04b044c2cbb0dba66f3a1c68--cookie-monster-quotes-cookie-quotes.jpg
-                        alt="Get Them Hot">
-            </a>
-                <p style=text-color:blue>Come and try Devin's famous cookies!
-                    <b>More than one miilion sold worldwide!</b>
-                    come get your treats from Devins!
+        <p1>Our Fans Top Cookies!
+            <br>
+            Oreo Chocolate Chip  Triple Chocolate Chunk  Mint Chocolate Chip  
+        </p1>
+        <img src=https://sallysbakingaddiction.com/wp-content/uploads/2014/12/brown-butter-chocolate-chip-cookies-3.jpg
+        alt="cookies">
+    </div>
+        <div class="container">
+            <div class="container-item">
+                    <img src=https://www.agoudalife.com/wp-content/uploads/smores-10.jpg
+                        alt="Smores Cookie">
+                </a>
+                <p>
+                    <i>Smores Delight</i>
+                    <br>
+                <a href="#">Add To Cart</a>
                 </p>
-                <header>
-                    <img src=https://i02.hsncdn.com/is/image/HomeShoppingNetwork/prodfull/cheryls-12-piece-chocolate-chip-cookies-d-20200831163457223~9755655w.jpg
-                        alt="chocolate chip cookies">
-                </header>
-                <main>
-                    <aside>
-                        <p1>Our fans voted for there for their favorite cookies
-                            and here are the results!</p1>
-                        <ol>
-                            <li>Chocolate Chip (yum)</li>
-                            <li>Dried Cram Bams</li>
-                            <li>Orange Zesties</li>
-                        </ol>
-                    </aside>
-                    <form>
-                        <input type=submit value=submit>
-                        <input type="search" value=search>
-                    </form>
-                </main>
-                <footer>
-                    <i>Located in Stillwater, Oklahoma</i>
-                </footer>
+            </div><div class="container-item">
+                    <img src=http://www.5boysbaker.com/wp-content/uploads/2015/11/peanut-butter-oatmeal-chocolate-chip-cookies.jpg
+                        alt="Oatmeal Chocolate Chip">
+                </a>
+                <p>
+                    <i>Oatmeal Chocolate Chip</i>
+                    <br>
+                <a href="#">Add To Cart</a>
+                </p>
+            </div><div class="container-item">
+                    <img src=https://www.twopeasandtheirpod.com/wp-content/uploads/2017/12/Chocolate-Mint-Chip-Cookies-6.jpg
+                        alt="Mint Chocolate Chip">
+                </a>
+                <p>
+                    <i>Mint Chocolate Chip</i>
+                    <br>
+                <a href="#">Add To Cart</a>
+                </p>
+            </div><div class="container-item">
+                    <img src=https://data.thefeedfeed.com/recommended/post_4375164.jpeg
+                        alt="Get Them Hot">
+                </a>
+                <p>
+                    <i>Triple Chocolate Chunk</i>
+                    <br>
+                    <a href="#">Add To Cart</a>
+                    </p>
+            </div><div class="container-item">
+                    <img src=https://th.bing.com/th/id/OIP.pC93zaxthTNQvu23uAgbHAAAAA?pid=Api&rs=1
+                        alt="Get Them Hot">
+                </a>
+                <p>
+                    <i>Snickerdoodle</i>
+                    <<br>
+                    <a href="#">Add To Cart</a>
+                    </p>
+            </div><div class="container-item">
+                    <img src=https://www.modernhoney.com/wp-content/uploads/2018/10/Soft-Chewy-Peanut-Butter-Cookies-4-cr.jpg
+                        alt="Get Them Hot">
+                </a>
+                <p>
+                    <i>Soft-Chewy Peanut Butter</i>
+                    <<br>
+                    <a href="#">Add To Cart</a>
+                    </p>
+            </div><div class="container-item">
+                    <img src=http://www.chewoutloud.com/wp-content/uploads/2014/03/MM-Chocolate-Chip-Pudding-Cookies.jpg
+                        alt="Get Them Hot">
+                </a>
+                <p>
+                    <i>Chocolate Chip M&M</i>
+                    <br>
+                <a href="#">Add To Cart</a>
+                </p>
+                </div><div class="container-item">
+                    <img src=https://i.pinimg.com/originals/d0/1d/e4/d01de45837beeb7fba9ce451f95eb43d.jpg
+                        alt="Get Them Hot">
+                </a>
+                <p>
+                    <i>Oreo Chocolate Chip</i>
+                    <br>
+                <a href="#">Add To Cart</a>
+                </p>
+            </div><div class="container-item">
+                    <img src=http://farm3.static.flickr.com/2715/4204058800_c2e9dff8e6.jpg
+                        alt="Get Them Hot">
+                </a>
+                <p>
+                    <i>Sweet Crans</i>
+                    <br>
+                <a href="#">Add To Cart</a>
+                </p>
+        </div>
+    </main>
+    <footer>
+        <form>
+            <input type=submit value=submit></style>
+            <input type="search" value=search>
+        </form>
+        <br>
+        <i>Located in Stillwater, Oklahoma</i>
+    </footer>
+
 
 </body>
-
-</footer>
 
 </html>
